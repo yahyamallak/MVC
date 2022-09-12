@@ -1,7 +1,7 @@
 <?php 
 
-namespace Google;
-use Google\LIB\FrontController;
+namespace MVC;
+use MVC\LIB\FrontController;
 
 if(!defined('DS')) {
     define('DS', DIRECTORY_SEPARATOR);

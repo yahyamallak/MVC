@@ -1,11 +1,11 @@
 <?php 
 
-namespace Google\LIB;
+namespace MVC\LIB;
 
 class FrontController {
 
     const NOT_FOUND_ACTION = 'notFoundAction';
-    const NOT_FOUND_CONTROLLER = 'Google\Controllers\NotFoundController';
+    const NOT_FOUND_CONTROLLER = 'MVC\Controllers\NotFoundController';
 
     private $_controller = 'index';
     private $_action = 'default';
@@ -35,7 +35,7 @@ class FrontController {
 
     public function dispatch() {
         
-        $controllerClassName = 'Google\Controllers\\' . ucfirst($this->_controller) . 'Controller';
+        $controllerClassName = 'MVC\Controllers\\' . ucfirst($this->_controller) . 'Controller';
         $actionName = $this->_action . 'Action';
 
         if(!class_exists($controllerClassName)) {

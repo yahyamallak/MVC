@@ -1,8 +1,8 @@
 <?php 
 
-namespace Google\Controllers;
+namespace MVC\Controllers;
 
-use Google\LIB\FrontController;
+use MVC\LIB\FrontController;
 
 class AbstractController {
 

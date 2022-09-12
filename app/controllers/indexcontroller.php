@@ -1,6 +1,6 @@
 <?php 
 
-namespace Google\Controllers;
+namespace MVC\Controllers;
 
 class IndexController extends AbstractController {
 
